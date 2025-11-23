@@ -18,8 +18,8 @@
 
 ## Скриншот
 
-![Пример круга](<img width="512" height="536" alt="image" src="https://github.com/user-attachments/assets/94120377-73be-46f0-90f6-20b18e766045" />
-) 
+<img width="441" height="527" alt="image" src="https://github.com/user-attachments/assets/a74cd021-ae2e-4d63-a7bd-36874ea82b53" />
+
 
 ---
 
