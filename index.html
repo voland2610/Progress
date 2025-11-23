@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Progres</title>
+  </head>
+  <body>
+    <div class="progres_blog">
+      <div class="progres_title">Progress</div>
+      <div class="circle_proggres">
+        <canvas id="myCanvas" width="200" height="200"></canvas>
+      </div>
+      <div class="menu_progres">
+        <div class="controls_circle">
+          <input type="number" id="percentInput" min="0" max="100" value="60" />
+          <label for="percentInput">Value</label>
+        </div>
+        <div class="progres_item">
+          <input id="isRotate" type="checkbox" class="progres__checkbox" />
+          <label class="checkbox" for="isRotate"></label>
+          <span class="progres_text">Animate</span>
+        </div>
+        <div class="item_hide">
+          <input id="isHide" name="isHide" type="checkbox" class="progres__checkbox"/>
+          <label class="checkbox" for="isHide"></label>
+          <span class="hide_text">Hide</span>          
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

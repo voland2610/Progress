@@ -1,0 +1,178 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+/*----------------------*/
+.progres_blog{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 568px;
+  gap: 10%;
+}
+
+.progres_title{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu_progres{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.controls_circle{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#percentInput{
+  text-align: center;
+  width: 45px;
+  height: 28px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*----------------------*/
+
+.progres_item{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.progres__checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox {
+  position: relative;
+  width: 45px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.checkbox::before,
+.checkbox::after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  transition: 0.25s;
+}
+
+.checkbox::before {
+  inset: 0;
+  background: #EFF3F6;
+}
+
+.checkbox::after {
+  width: 22px;
+  height: 22px;
+  top: 3px;
+  left: 3px;
+  background: #fff;
+}
+
+.progres__checkbox:checked + .checkbox::before {
+  background: #0d6efd;
+}
+
+.progres__checkbox:checked + .checkbox::after {
+  transform: translateX(17px);
+}
+
+/*----------------------*/
+
+.item_hide {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.progres__checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox {
+  position: relative;
+  width: 45px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.checkbox::before,
+.checkbox::after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  transition: 0.25s;
+}
+
+.checkbox::before {
+  inset: 0;
+  background: #EFF3F6;
+}
+
+.checkbox::after {
+  width: 22px;
+  height: 22px;
+  top: 3px;
+  left: 3px;
+  background: #fff;
+}
+
+.progres__checkbox:checked + .checkbox::before {
+  background: #0d6efd;
+}
+
+.progres__checkbox:checked + .checkbox::after {
+  transform: translateX(17px);
+}
+
+/*----------------------*/
+
+@media (min-width: 320px) and (max-width: 568px){
+  .progres_blog{
+    font-size: 12px;
+    flex-direction: row;
+    height: 320px;
+    width: 568px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+canvas {
+  opacity: 1; /* видимый по умолчанию */
+  transition: opacity 0.25s linear;
+}
+
+.hide_circle {
+  opacity: 0;
+}
