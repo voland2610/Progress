@@ -1,5 +1,5 @@
 class ProgressCircle {
-  constructor({ canvasId }) {
+  constructor({ canvasId, currentPercent }) {
     this.canvas = document.getElementById(canvasId);
     this.ctx = this.canvas.getContext('2d');
 
@@ -10,7 +10,7 @@ class ProgressCircle {
     this.strokeStyle = '#005BFF';
     this.hideClass = 'hide_circle';
 
-    this.currentPercent = 0;
+    this.currentPercent = currentPercent;
     this.angle = 0;
     this.isRotating = false;
     this.rotationFrame = null;
@@ -78,7 +78,7 @@ class ProgressCircle {
   }
 }
 
-const myCircle = new ProgressCircle({ canvasId: 'myCanvas' });
+const myCircle = new ProgressCircle({ canvasId: 'myCanvas', currentPercent: 90});
 
 const percentInput = document.getElementById('percentInput');
 const rotateToggle = document.getElementById('isRotate');

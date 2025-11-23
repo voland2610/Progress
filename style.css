@@ -168,8 +168,10 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
+/*----------------------*/
+
 canvas {
-  opacity: 1; /* видимый по умолчанию */
+  opacity: 1; 
   transition: opacity 0.25s linear;
 }
 
