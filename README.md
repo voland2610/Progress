@@ -25,6 +25,6 @@
 
 ## Демонстрация
 
-[Пример на GitHub Pages]([https://username.github.io/progress-circle/](https://voland2610.github.io/Progress/))
+https://voland2610.github.io/Progress/
 
 ---
